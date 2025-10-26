@@ -1,8 +1,6 @@
 import './globals.css'
 import type { ReactNode } from 'react'
 import Header  from '@/components/organisms/Header/Header'
-import Footer  from '@/components/organisms/Footer/Footer'
-
 
 export const metadata = {
 	title: 'My App',
@@ -19,7 +17,6 @@ export default function RootLayout({ children }: Props) {
 			<body>
 				<Header />
 				{children}
-				<Footer />
 			</body>
 		</html>
 	)

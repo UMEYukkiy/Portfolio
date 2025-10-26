@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      ComicRelief: ['var(--font-comic-relief)', 'sans-serif'],
+    }
   },
   plugins: [],
 }
