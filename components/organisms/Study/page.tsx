@@ -9,7 +9,7 @@ export default function Study({ titleFont, bodyFont }: FontProps) {
       <section className="relative min-h-screen flex items-center justify-center bg-gray-100">
         <div className="absolute left-0 top-0 h-full w-1/3 bg-[url('/images/study_image.jpg')] bg-cover bg-center"></div>
       
-        <div className="relative z-10 h-300 ml-200 pt-8 px-8 bg-zinc-300 text-black">
+        <div className="relative z-10 h-300 ml-120 pt-8 px-8 bg-zinc-300 text-black">
           <h2 className={`text-3xl text-center font-extrabold mt-2 ${titleFont}`}>My History</h2>
           <div className="border-l-4 border-gray-400 pl-8 mt-16">
             <div>
