@@ -21,8 +21,13 @@ export default function HomePage(){
       <div className="h-100 justify-center items-center flex flex-col">
         <h1 className={`text-4xl font-bold text-center mt-8 ${ComicRelief700.className}`}>Welcome to My Portfolio!</h1>
       </div>
-      <Profile titleFont={ComicRelief700.className} bodyFont={ComicRelief400.className} />
-      <Study titleFont={ComicRelief700.className} bodyFont={ComicRelief400.className} />
+      <section className="relative min-h-screen flex flex-col">
+        <div className="absolute left-0 top-0 h-full w-1/3 bg-[url('/images/study_image.jpg')] bg-cover bg-center bg-fixed"></div>
+        <div className="ml-auto right-0 top-0 h-full w-2/3 flex-col item-center">
+          <Profile titleFont={ComicRelief700.className} bodyFont={ComicRelief400.className}/>
+          <Study titleFont={ComicRelief700.className} bodyFont={ComicRelief400.className} />
+        </div>
+      </section>
       <Footer />
     </main>
   )

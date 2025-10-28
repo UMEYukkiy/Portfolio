@@ -6,9 +6,9 @@ type FontProps = {
 export default function Profile({ titleFont, bodyFont} : FontProps){
   return (
     <main>
-      <div className="bg-white shadow-md text-black">
-        <h2 className={`text-3xl text-center font-extrabold mt-8 pt-8 ${titleFont}`}>Profile</h2>
-        <div className="h-70 w-200 pt-8 px-8">
+      <div className="relative bg-white shadow-md text-black z-10 h-100 w-full pt-8 px-8">
+        <h2 className={`text-3xl text-center ${titleFont}`}>Profile</h2>
+        <div className="h-50 pt-8 px-8">
           <h1 className={`text-3xl text-left font-semibold mt-2 ${bodyFont}`}>Ume Yukito</h1>
           <h2 className={`text-xl text-left mt-2 ${bodyFont}`}>Aizu University</h2>
           <p className={`text-base text-left mt-2 ${bodyFont}`}>
