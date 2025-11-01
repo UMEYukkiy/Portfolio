@@ -19,7 +19,7 @@ export default function AnimateImage() {
   return (
     <div
       ref={imgRef}
-      className="absolute left-0 top-0 h-full w-1/3 bg-[url('/images/study_image.jpg')] bg-cover bg-center bg-fixed transition-transform duration-300"
+      className="absolute left-0 top-0 h-400 w-1/3 bg-[url('/images/study_image.jpg')] bg-cover bg-center bg-fixed transition-transform duration-300"
       style={{
         transform: `translateX(${translate}%)`,
       }}
