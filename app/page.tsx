@@ -1,8 +1,11 @@
+"use client"
+
 import Profile from "@/components/organisms/Profile/page"
 import Study from "@/components/organisms/Study/page"
 import Works from "@/components/organisms/Works/page"
 import Footer from "@/components/organisms/Footer/Footer"
 import AnimatedImage from "@/components/organisms/Animater/AnimatedImage"
+import { useTextShuffle } from "@/hooks/useTextShuffle"
 import { Comic_Relief } from 'next/font/google'
 
 const ComicRelief400 = Comic_Relief({
@@ -18,10 +21,12 @@ const ComicRelief700 = Comic_Relief({
 })
 
 export default function HomePage(){
+  const text = useTextShuffle({ text:"Welcome to My Portfolio!", duration:1400, shuffleInterval:50 });
+  
   return (
     <main className={"scroll-snap-y scroll-snap-mandatory h-screen overflow-y-scroll"}>
       <div className="h-100 justify-center items-center flex flex-col">
-        <h1 className={`text-4xl font-bold text-center mt-8 ${ComicRelief700.className}`}>Welcome to My Portfolio!</h1>
+        <h1 className={`text-4xl font-bold text-center mt-8 ${ComicRelief700.className}`}>{text}</h1>
       </div>
       <section className="relative min-h-screen flex flex-col">
         <AnimatedImage />
